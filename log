@@ -403,3 +403,21 @@ exercises.c:111:8: error: invalid operands to binary + (have ‘Vector’ and �
       |      Vector
 Compilation failed
 965d3a1
+Fri 12 Aug 2022 01:00:09 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:100:13: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  100 |   int valor=v[i].datos;
+      |             ^
+exercises.c: In function ‘sumaV’:
+exercises.c:111:8: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  111 |   *c=*a+*b;
+      |      ~~^~~
+      |      |  |
+      |      |  Vector
+      |      Vector
+cc1: all warnings being treated as errors
+Compilation failed
+f804a2f
