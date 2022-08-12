@@ -1,0 +1,41 @@
+Fri 12 Aug 2022 12:26:55 PM UTC: 
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:41:3: error: ‘aux’ undeclared (first use in this function)
+   41 |   aux=n;
+      |   ^~~
+exercises.c:41:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:44:3: error: ‘tot’ undeclared (first use in this function)
+   44 |   tot=sumaN(b[],m);
+      |   ^~~
+exercises.c:44:15: error: expected expression before ‘]’ token
+   44 |   tot=sumaN(b[],m);
+      |               ^
+exercises.c:40:7: error: variable ‘b’ set but not used [-Werror=unused-but-set-variable]
+   40 |   int b[n];
+      |       ^
+exercises.c: In function ‘crearVector’:
+exercises.c:80:12: error: invalid initializer
+   80 |   Vector v=(Vector*)calloc(n,sizeof(Vector));
+      |            ^
+exercises.c:81:10: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   81 |   return v;
+      |          ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:91:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   91 |   *v[i]=valor;
+      |   ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:100:13: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  100 |   int valor=*v[i];
+      |             ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:111:8: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  111 |   *c=*a+*b;
+      |      ~~^~~
+      |      |  |
+      |      |  Vector
+      |      Vector
+cc1: all warnings being treated as errors
+Compilation failed
+7024f11
