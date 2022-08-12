@@ -199,3 +199,36 @@ exercises.c:111:8: error: invalid operands to binary + (have ‘Vector’ and �
       |      Vector
 Compilation failed
 fab2fd3
+Fri 12 Aug 2022 12:41:57 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:80:12: error: invalid initializer
+   80 |   Vector v=(Vector*)calloc(n,sizeof(Vector));
+      |            ^
+exercises.c:81:10: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   81 |   return v;
+      |          ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:90:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   90 |   *v[i]=valor;
+      |   ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:99:13: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   99 |   int valor=*v[i];
+      |             ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:110:8: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  110 |   *c=*a+*b;
+      |      ~~^~~
+      |      |  |
+      |      |  Vector
+      |      Vector
+exercises.c: In function ‘crearVector’:
+exercises.c:82:1: error: control reaches end of non-void function [-Werror=return-type]
+   82 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b396e01
