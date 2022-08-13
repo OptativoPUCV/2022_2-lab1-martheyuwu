@@ -624,3 +624,14 @@ exercises.c:115:7: error: unused variable ‘tamano’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 2e13208
+Sat 13 Aug 2022 12:51:23 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:116:7: error: unused variable ‘tamano’ [-Werror=unused-variable]
+  116 |   int tamano=a->capacidad;
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+08a2871
