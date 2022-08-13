@@ -552,3 +552,13 @@ Sat 13 Aug 2022 12:37:19 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 3f2af15
+Sat 13 Aug 2022 12:41:54 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:8: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+   86 |   *v = (Vector*)calloc(n,sizeof(Vector));
+      |        ^
+Compilation failed
+80af193
