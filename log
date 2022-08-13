@@ -704,3 +704,13 @@ exercises.c:86:14: error: invalid type argument of unary ‘*’ (have ‘int’
       |              ^~
 Compilation failed
 2f5f6ac
+Sat 13 Aug 2022 01:34:27 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:16: error: expected expression before ‘,’ token
+   86 |   v = calloc(n*,sizeof(Vector));
+      |                ^
+Compilation failed
+c3d17c9
