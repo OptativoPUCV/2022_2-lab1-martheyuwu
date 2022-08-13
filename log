@@ -678,3 +678,14 @@ Sat 13 Aug 2022 12:54:54 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 aefe0e8
+Sat 13 Aug 2022 01:29:56 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:45:7: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   45 |   suma=tot;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+32e733a
