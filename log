@@ -761,3 +761,16 @@ Sat 13 Aug 2022 06:44:17 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 ab4bb7f
+Sat 13 Aug 2022 06:54:56 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:12: error: redefinition of ‘v’
+   86 |   Vector * v = calloc(n,sizeof(Vector));
+      |            ^
+exercises.c:85:11: note: previous definition of ‘v’ was here
+   85 |   Vector *v= NULL;
+      |           ^
+Compilation failed
+843feec
