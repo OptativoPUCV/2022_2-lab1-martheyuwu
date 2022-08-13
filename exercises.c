@@ -92,9 +92,9 @@ Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor), 
 la cual asigna el valor a la posición i del vector v.
 */
-void asignarValor(Vector * v, int i, int valor) {
-  *v[i].datos=valor;
-}
+//void asignarValor(Vector * v, int i, int valor) {
+ // *v[i].datos=valor;
+//}
 
 /*
 Ejercicio 6.
@@ -114,7 +114,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
   int tamano=a->capacidad;
-  printf("%d",tamano);
+  
 }
 
 /*

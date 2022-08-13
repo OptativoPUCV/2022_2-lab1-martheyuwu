@@ -598,3 +598,18 @@ Sat 13 Aug 2022 12:49:18 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 8842423
+Sat 13 Aug 2022 12:50:21 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:116:7: error: unused variable ‘tamano’ [-Werror=unused-variable]
+  116 |   int tamano=a->capacidad;
+      |       ^~~~~~
+test.c: In function ‘test_asignarObtenerValor’:
+test.c:160:5: error: implicit declaration of function ‘asignarValor’ [-Werror=implicit-function-declaration]
+  160 |     asignarValor(v, 0, a);
+      |     ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6d1fb1a
