@@ -613,3 +613,14 @@ test.c:160:5: error: implicit declaration of function ‘asignarValor’ [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 6d1fb1a
+Sat 13 Aug 2022 12:51:01 AM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:115:7: error: unused variable ‘tamano’ [-Werror=unused-variable]
+  115 |   int tamano=a->capacidad;
+      |       ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2e13208
