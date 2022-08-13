@@ -583,3 +583,13 @@ exercises.c:116:16: error: ‘a’ is a pointer; did you mean to use ‘->’?
       |                ->
 Compilation failed
 97ea377
+Sat 13 Aug 2022 12:49:05 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:116:14: error: invalid type argument of unary ‘*’ (have ‘int’)
+  116 |   int tamano=*a->capacidad;
+      |              ^~~~~~~~~~~~~
+Compilation failed
+5e0b4a3
