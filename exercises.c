@@ -85,6 +85,7 @@ Vector * crearVector(int n) {
   Vector *v= NULL;
   v = (Vector *)calloc(1,sizeof(Vector));
   v->capacidad=n;
+  v->datos=calloc(n,sizeof(int));
   return v;
 }
 
